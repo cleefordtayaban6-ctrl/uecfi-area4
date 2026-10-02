@@ -1,0 +1,20 @@
+UECFI AREA 4 — DEPLOYMENT & DATA GUIDE
+=======================================
+FILES (keep together in ONE folder):
+  index.html   the app          sw.js   offline engine
+  data.js      YOUR members + prayers (edit this)
+  photos/      member photos
+
+ADDING MEMBERS / PRAYERS
+  1. Copy photos into the "photos" folder.
+  2. Open data.js in Notepad and fill in the members and prayers lists (examples are inside).
+  3. Open sw.js and change CACHE_NAME 'uecfi-lyrics-v5' to 'uecfi-lyrics-v6' (next time v7...).
+  4. Upload the whole folder. Each device loads the new entries on its next online visit.
+
+DEPLOY: host the folder on any HTTPS static host (Netlify, Cloudflare Pages, GitHub Pages),
+then on phones use "Add to Home Screen"/"Install app".
+
+FIRST LOGIN: superadmin / ChangeMe123! (forced change). Change it immediately.
+
+BACKGROUND: the UECFI background art is LOCKED in index.html (section "LOCKED: BRAND BACKGROUND").
+It shows in Light and Dark themes. Do not edit that section.
